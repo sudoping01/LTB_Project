@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SMP-CONTACT</title>
+	<link rel="icon" href="img/Fevicon.png" type="image/png">
+  <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="vendors/flat-icon/font/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+  <!--================ Header Menu Area start =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container box_1620">
+          <a class="navbar-brand logo_h" href="home.html"><img src="img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav justify-content-end">
+              <li class="nav-item"><a class="nav-link" href="home.html">New</a></li> 
+              <li class="nav-item"><a class="nav-link" href="contact.html">Nous Contacter</a></li> 
+              <!-- <li class="nav-item active"><a class="nav-link" href="contact.html">Nous Contacter</a></li> -->
+                             
+                
+							</li>
+
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Assistant Vocal </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+
+                    <form action="" method="POST">
+
+      
+                        <input id="txt" type="hidden" class="txt" value="vous êtes dans la section nous contacter. Cette section vous permet de contacter l'administration du lycée Technique de Bamako. A ce niveau, vous devez entrez le message que vous souhaitez envoyer, votre nom, votre adresse mail et l'objet de votre message. Et ensuite cliquer sur envoyer, l'administration recevra votre message." />
+                      <div style="display: none;">
+                     <div>
+                      <label for="rate">Rate</label><input type="range" min="0.5" max="2" value="1" step="0.1" id="rate" />
+                        <div class="rate-value">1</div>
+                           <div class="clearfix"></div>
+                              </div>
+                            <div>
+                            <label for="pitch">Pitch</label
+                             ><input type="range" min="0" max="2" value="1" step="0.1" id="pitch" />
+                             <div class="pitch-value">1</div>
+                           <div class="clearfix"></div>
+                           </div>
+                           </div>
+                            <select></select>
+                            
+                            <div class="controls">
+                       <button style="border: none; width: 100%; text-align: left;" class="nav-link" id="play" type="submit">Activer</button>
+                        </div>
+                      </form>
+                    <script src="speech3/script.js"></script>
+
+                    </li>
+                  <li class="nav-item"><a class="nav-link" href="chemin_to_file">Deactiver</a></li>
+                </ul>
+							</li>
+              
+            </ul>
+
+            
+          </div> 
+        </div>
+      </nav>
+    </div>
+  </header>
+ 
+
+  
+  <!--================Hero Banner Area Start =================-->
+
+  <section class="hero-banner hero-banner-sm">
+    <div class="container text-center">
+      <h2>Nous Contacter </h2>
+     
+    </div>
+  </section>
+
+
+
+  <!-- ================ contact section start ================= -->
+  <section class="section-margin--large">
+    <div class="container">
+      <div class="d-none d-sm-block mb-5 pb-4">
+        
+
+
+      <div class="row">
+        <div class="col-12">
+          <h2 class="contact-title">Ecrivez votre message</h2>
+        </div>
+        <div class="col-lg-8">
+          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" placeholder="Entrer votre Message"></textarea>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="name" id="name" type="text" placeholder="Entrer votre nom">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="email" id="email" type="email" placeholder="Entrer votre adresse mail">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="subject" id="subject" type="text" placeholder="Objet">
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <button type="submit" class="button button-contactForm">Envoyer</button>
+            </div>
+          </form>
+
+
+        </div>
+
+        <div class="col-lg-4">
+          
+          
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-email"></i></span>
+            <div class="media-body">
+              
+              <p>Envoyez nous à tout moment !</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+          
+        </div>
+        <div class="col-md-8 col-lg-9">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+	
+
+  <!-- ================ start footer Area ================= -->
+
+
+  <footer class="footer-area">            
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <p class="col-lg-8 col-sm-12 footer-text m-0 text-center text-lg-left">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i>  <a href="https://www.linkedin.com/in/seydou-diallo-08ab311ba/?originalSubdomain=ml" target="_blank">Sed</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          <div class="col-lg-4 col-sm-12 footer-social text-center text-lg-right">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ================ End footer Area ================= -->
+  <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.form.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>	
+  <script src="js/main.js"></script>
+
+
+
+</body>
+</html>
